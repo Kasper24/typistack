@@ -11,6 +11,8 @@
     "lint:types": "npm run lint:types --workspaces",
     "lint:check": "npm run lint:check --workspaces",
     "lint:fix": "npm run lint:fix --workspaces",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,css,yaml}\"",
+    "format:write": "prettier --write \"**/*.{ts,tsx,js,css,yaml}\"",
     "publish": "npm run build && npm publish --workspaces",
     "publish:dry": "npm run build && npm publish --dry-run --workspaces",
     "version": "npm version --workspaces"
