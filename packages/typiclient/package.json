@@ -24,10 +24,7 @@
   },
   "scripts": {
     "build": "bunchee",
-    "dev": "bunchee --watch",
-    "lint:types": "tsc --noEmit",
-    "lint:check": "eslint --max-warnings=0",
-    "lint:fix": "eslint --fix"
+    "dev": "bunchee --watch"
   },
   "dependencies": {
     "@typistack/server": "0.1.1",

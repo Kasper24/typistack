@@ -34,10 +34,7 @@
   },
   "scripts": {
     "build": "bunchee",
-    "dev": "bunchee --watch",
-    "lint:types": "tsc --noEmit",
-    "lint:check": "eslint --max-warnings=0",
-    "lint:fix": "eslint --fix"
+    "dev": "bunchee --watch"
   },
   "dependencies": {
     "cookie-parser": "^1.4.7",

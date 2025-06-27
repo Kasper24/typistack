@@ -8,9 +8,9 @@
   "scripts": {
     "build": "npm run build --workspaces",
     "dev": "npm run dev --workspaces",
-    "lint:types": "npm run lint:types --workspaces",
-    "lint:check": "npm run lint:check --workspaces",
-    "lint:fix": "npm run lint:fix --workspaces",
+    "lint:types": "tsc --noEmit",
+    "lint:check": "eslint --max-warnings=0",
+    "lint:fix": "eslint --fix",
     "format:check": "prettier --check \"**/*.{ts,tsx,js,css,yaml}\"",
     "format:write": "prettier --write \"**/*.{ts,tsx,js,css,yaml}\"",
     "publish": "npm run build && npm publish --workspaces",

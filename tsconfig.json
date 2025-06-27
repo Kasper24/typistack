@@ -5,7 +5,7 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "rootDir": "src",
+    "rootDir": "./",
     "composite": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -22,6 +22,6 @@
     "noEmit": true,
     "strictNullChecks": true
   },
-  "include": ["packages/**/*.ts"],
+  "include": ["./packages/**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }
