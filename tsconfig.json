@@ -1,12 +1,27 @@
 {
-  "extends": "@repo/typescript-config/base.json",
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "outDir": "dist",
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "rootDir": "src"
+    "rootDir": "src",
+    "composite": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowImportingTsExtensions": true,
+    "inlineSources": false,
+    "isolatedModules": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "strictNullChecks": true
   },
-  "include": ["src/**/*.ts"],
+  "include": ["packages/**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }
