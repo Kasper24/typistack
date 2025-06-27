@@ -108,27 +108,27 @@ class TypiRouter<TRoutes extends RouteMap = RouteMap> {
     });
   }
 
-  private setupMiddleware(options?: TypiServerOptions) {
-    this.router.use(
-      express.urlencoded({
-        extended: true,
-        ...options?.urlencoded,
-      }),
-    );
-    this.router.use(express.json({ ...options?.json }));
+  // private setupMiddleware(options?: TypiServerOptions) {
+  //   this.router.use(
+  //     express.urlencoded({
+  //       extended: true,
+  //       ...options?.urlencoded,
+  //     }),
+  //   );
+  //   this.router.use(express.json({ ...options?.json }));
 
-    this.router.use(
-      multer({
-        storage: options?.fileUpload?.storage || multer.memoryStorage(),
-        limits: {
-          fileSize: 10 * 1024 * 1024, // 10MB default
-          ...options?.fileUpload?.limits,
-        },
-      }).any(),
-    );
+  //   this.router.use(
+  //     multer({
+  //       storage: options?.fileUpload?.storage || multer.memoryStorage(),
+  //       limits: {
+  //         fileSize: 10 * 1024 * 1024, // 10MB default
+  //         ...options?.fileUpload?.limits,
+  //       },
+  //     }).any(),
+  //   );
 
-    this.router.use(cookieParser());
-  }
+  //   this.router.use(cookieParser());
+  // }
 
   private sendResponse(res: Response, result: RouteHandlerResponse) {
     return res
