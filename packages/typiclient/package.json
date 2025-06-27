@@ -30,7 +30,7 @@
     "lint:fix": "eslint --fix"
   },
   "dependencies": {
-    "@typistack/server": "0.1.0",
+    "@typistack/server": "0.1.1",
     "superjson": "^2.2.2",
     "zod": "^3.25.6"
   }
